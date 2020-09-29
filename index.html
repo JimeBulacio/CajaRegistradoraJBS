@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Caja Registradora JBS</title>
+</head>
+
+<body>
+    <img src="https://http2.mlstatic.com/barras-equipamiento-cervecerias-resto-somos-fabrica-bar-101-D_NQ_NP_921879-MLA27443501035_052018-F.jpg"
+        alt="" class="imagen">
+
+    <div class="cajaRegistradora">
+        <!--contenedor con el logo y display-->
+        <div class="container">
+            <div class="container-logo">
+                <img src="lg_RC.png" alt="logo-rc" class="logo-rc">
+            </div>
+            <div class="display" id="display"></div>
+        </div>
+        <!--contenedor del ticket y numeros-->
+        <div class="box2">
+            <div class="box">
+                <!--contenedor del ticket-->
+                <div class="container-ticket">
+                    <div class="ticket">---- <br> ----</div>
+                    <div class="bottomTicket"></div>
+                </div>
+                <!--contenedor del ticket-->
+                <div class="keys">
+                    <button onclick="presionarNumero('7')" class="siete">7</button>
+                    <button onclick="presionarNumero('8')" class="ocho">8</button>
+                    <button onclick="presionarNumero('9')" class="nueve">9</button>
+                    <button onclick="sumar()" class="suma">+</button>
+                    <button onclick="presionarNumero('4')" class="cuatro">4</button>
+                    <button onclick="presionarNumero('5')" class="cinco">5</button>
+                    <button onclick="presionarNumero('6')" class="seis">6</button>
+                    <button onclick="restar('-')" class="resta">-</button>
+                    <button onclick="presionarNumero('1')" class="uno">1</button>
+                    <button onclick="presionarNumero('2')" class="dos">2</button>
+                    <button onclick="presionarNumero('3')" class="tres">3</button>
+                    <button onclick="multiplicar()" class="multiplicacion">*</button>
+                    <button onclick="ac()" class="reset">AC</button>
+                    <button onclick="presionarNumero('0')" class="cero">0</button>
+                    <button onclick="calcular()" class="igual" id="calcula">=</button>
+                    <button onclick="dividir()" class="division">/</button>
+                </div>
+            </div>
+        </div>
+        <!--cajon de abajo ver la ppt hay un cierre de mas-->
+        <div class="big-box-medium"></div>
+        <div class="big-box-bottom"></div>
+        <div class="box-cash"></div>
+        <div class="box-cash2">
+            <div class="reg"></div>
+            <div class="circle"> <b>-</b></div>
+            <div class="reg-r2"></div>
+        </div>
+        <div class="box-cash3"></div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
